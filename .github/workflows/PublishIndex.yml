@@ -1,0 +1,66 @@
+name: Build and Publish
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - '*'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env: 
+  TEMP_PATH: ./Temp
+  TOOL_PATH: ./Temp/Tool
+  PUBLISH_PATH: ./Temp/Publish
+  TOOL_NAME: Reloaded.Community.Tool.exe
+
+jobs:
+  build:
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: pwsh
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET Core SDK (5.0)
+      uses: actions/setup-dotnet@v1.8.2
+      with:
+        dotnet-version: 5.0.x
+        
+    - name: Create Output Directories
+      run: |
+        [System.IO.Directory]::CreateDirectory("$env:TOOL_PATH")
+        [System.IO.Directory]::CreateDirectory("$env:PUBLISH_PATH")
+        
+    - name: Download Community Tool
+      id: download_release_asset
+      uses: i3h/download-release-asset@v1
+      with:
+        owner: Reloaded-Project
+        repo: Reloaded.Community
+        tag: latest
+        file: ${{ env.TOOL_NAME }} 
+        path: ${{ env.TOOL_PATH }}
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      
+    - name: Print File Contents
+      run: |
+        Get-ChildItem "$env:TEMP_PATH" -Recurse
+        
+    - name: Build Index
+      run: |
+        & "$env:TOOL_PATH/$env:TOOL_NAME" buildIndex --source "." --destination $env:PUBLISH_PATH
+      
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: ${{ env.PUBLISH_PATH }} 
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      
