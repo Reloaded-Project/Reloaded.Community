@@ -50,14 +50,15 @@ Using an ID returned from the previous step. Once done, additional configuration
 
 ### Main
 
-| Item         | Description                                                                                              |
-|--------------|----------------------------------------------------------------------------------------------------------|
-| Hash         | Hash of main executable.                                                                                 |
-| AppId        | Unique ID of the application.                                                                            |
-| AppStatus    | 0 = Valid. 1 = Invalid. If 1, shows warning in launcher. Use 1 for marking wrong EXEs in game folder(s). |
-| AppName      | Name of the application. Overrides the auto generated name in Reloaded's launcher.                       |
-| Description  | A description shown if AppStatus is set to 1. Provide information about the potential issue here.        |
-| GameBananaId | Game ID for GameBanana. Available e.g. 6061 for https://gamebanana.com/games/6061                        |
+| Item                  | Description                                                                                              |
+|-----------------------|----------------------------------------------------------------------------------------------------------|
+| Hash                  | Hash of main executable.                                                                                 |
+| AppId                 | Unique ID of the application.                                                                            |
+| AppStatus             | 0 = Valid. 1 = Invalid. If 1, shows warning in launcher. Use 1 for marking wrong EXEs in game folder(s). |
+| AppName               | Name of the application. Overrides the auto generated name in Reloaded's launcher.                       |
+| BadHashDescription    | Description shown for when game matches by ID but not by hash. (e.g. Good game, bad EXE)                 |
+| BadStatusDescription  | A description shown if AppStatus is set to 1. Provide information about the potential issue here.        |
+| GameBananaId          | Game ID for GameBanana. Available e.g. 6061 for https://gamebanana.com/games/6061                        |
 
 ### Warnings
 

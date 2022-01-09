@@ -1,0 +1,10 @@
+{
+  "Hash": "33A911467398D820",
+  "BadHashDescription": "Mods target the NoCD version of Sonic Heroes; specifically the Reloaded release. That said, any NoCD version with removed SafeDisc DRM should work, including Sega's own Sonic PC Collection.",
+  "AppId": "tsonic_win.exe",
+  "AppStatus": 0,
+  "BadStatusDescription": null,
+  "AppName": "SONIC HEROES(TM)",
+  "GameBananaId": 6061,
+  "Warnings": []
+}
