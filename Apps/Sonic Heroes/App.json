@@ -6,5 +6,15 @@
   "BadStatusDescription": null,
   "AppName": "Sonic Heroes",
   "GameBananaId": 6061,
-  "Warnings": []
+  "Warnings": [
+    {
+      "ErrorMessage": "Your game folder contains ThirteenAG's WidescreenFix. You might experience a crash in Special Stage 4 and some other mods.\n\nWorkaround:\n- Delete `scripts/SonicHeroes.WidescreenFix.asi`\n- Download Heroes Graphics Essentials.",
+      "Items": [
+        {
+          "Hash": "7180B796B297ED77",
+          "FilePath": "scripts/SonicHeroes.WidescreenFix.asi"
+        }
+      ]
+    }
+  ]
 }
