@@ -60,6 +60,8 @@ Using an ID returned from the previous step. Once done, additional configuration
 | BadStatusDescription  | A description shown if AppStatus is set to 1. Provide information about the potential issue here.        |
 | GameBananaId          | Game ID for GameBanana. Available e.g. 6061 for https://gamebanana.com/games/6061                        |
 
+In order to obtain hashes of files, use `Reloaded.Community.Tool.exe hash --source "PATH_TO_FILE"`.
+
 ### Warnings
 
 Can be used to provide warnings for 3rd party components. e.g. Old DLL mods incompatible with Reloaded, Steam API Emulator DLLs, etc.
