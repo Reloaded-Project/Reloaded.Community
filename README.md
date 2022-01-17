@@ -79,6 +79,12 @@ Can be used to provide warnings for 3rd party components. e.g. Old DLL mods inco
 
 If the hash is provided, a warning will only be thrown if the file exists AND it matches the specified hash. If the hash is not provided, a warning will be thrown if the file exists. Use this to mark specific versions of files.
 
+## Testing Configurations
+
+You can test your created configurations by using the `Test Community Configuration` button under `Advanced Tools & Options`.  
+
+![Image](./Docs/TestReference.png)
+
 ## Contributing
 
 Create an `Issue` with a new profile, or if you are more familiar with GitHub, a pull request.
