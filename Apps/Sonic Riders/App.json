@@ -1,0 +1,10 @@
+{
+  "Hash": "700B8DA1514D687F",
+  "BadHashDescription": "Mods target the NoCD version of Sonic Riders; specifically the Reloaded release. That said, any NoCD version with removed DRM should work, including Sega's own Sonic PC Collection.",
+  "AppId": "sonicriders.exe",
+  "AppStatus": 0,
+  "BadStatusDescription": null,
+  "AppName": "Sonic Riders",
+  "GameBananaId": 6355,
+  "Warnings": []
+}
