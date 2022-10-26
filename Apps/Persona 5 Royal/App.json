@@ -1,6 +1,6 @@
 {
   "Hash": "55C946FF337FD704",
-  "BadHashDescription": "Reminder only Steam is supported right now, thanks. [Ignore this if you're on Steam and ask people to update config at Reloaded.Community]",
+  "BadHashDescription": "Only Steam is officially supported, thanks. No guarantees of mod support in any other versions. [If you're on Steam and you see this, ask people to update config at Reloaded.Community]",
   "AppId": "p5r.exe",
   "AppStatus": 0,
   "BadStatusDescription": null,
