@@ -1,0 +1,10 @@
+{
+    "Hash": "20BB6655EE6AC3A5",
+    "BadHashDescription": null,
+    "AppId": "smt5v.exe",
+    "AppStatus": 1,
+    "BadStatusDescription": "You have selected the wrong file, this is a launcher for the game, not the actual exe. Please go back and select SMT5V-Win64-Shipping.exe in the Project\\Binaries\\Win64 folder.",
+    "AppName": "SMT5V.exe",
+    "GameBananaId": 0,
+    "Warnings": []
+}
