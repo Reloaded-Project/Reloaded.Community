@@ -1,0 +1,10 @@
+{
+  "Hash": "8103199CD9BEE2BF",
+  "BadHashDescription": null,
+  "AppId": "raincodeplus.exe",
+  "AppStatus": 1,
+  "AppName": "RainCodePlus.exe",
+  "BadStatusDescription": "You have selected the wrong file, this is a launcher for the game, not the actual exe. Please go back and select RainCodePlus-Win64-Shipping.exe in the RainCodePlus\\Binaries\\Win64 folder.",
+  "GameBananaId": 0,
+  "Warnings": []
+}
