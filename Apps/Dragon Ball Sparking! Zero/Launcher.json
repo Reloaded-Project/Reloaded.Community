@@ -1,0 +1,10 @@
+{
+    "Hash": "5F5A1D28645D125E",
+    "BadHashDescription": null,
+    "AppId": "sparkingzero.exe",
+    "AppStatus": 1,
+    "BadStatusDescription": "You have selected the wrong file, this is a launcher for the game, not the actual exe. Please go back and select SparkingZERO-Win64-Shipping.exe in the SparkingZERO\\Binaries\\Win64 folder.",
+    "AppName": "SparkingZERO.exe",
+    "GameBananaId": 0,
+    "Warnings": []
+}
